@@ -18,3 +18,9 @@ DSBuilder class >> consume: aCollection asDimensions: aCollection2 [
 		collect: [ :data :dimensionClass | dimensionClass consumeFrom: data ]
 
 ]
+
+{ #category : #'instance creation' }
+DSBuilder class >> consumeCollection: aCollection asElementOf: aCollection2 [ 
+	
+	^ aCollection collect: [ :each | DSCompositeDomain data: each for: aCollection2 ]
+]

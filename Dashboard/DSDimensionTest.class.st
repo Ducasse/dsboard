@@ -5,6 +5,27 @@ Class {
 }
 
 { #category : #tests }
+DSDimensionTest >> testCompositeDimension [
+
+	| res | 
+	res := DSBuilder 
+		consumeCollection: 
+			#(
+			(2.4 true 'rain')
+			(0.5 true 'rain')
+			(-1.2 true 'snow')
+			(-2.3 false '-')
+			(3.2 true 'rain')	) 
+		asElementOf: { DSTemperature . DSBoolean . DSEnumerated }.
+	self assert: res size equals: 5.
+	self assert: res first first type equals: DSTemperature.
+	self assert: res first second type equals: DSBoolean.
+	self assert: res first third type equals: DSEnumerated
+	
+	 
+]
+
+{ #category : #tests }
 DSDimensionTest >> testSimpleDimension [
 
 	| res |
