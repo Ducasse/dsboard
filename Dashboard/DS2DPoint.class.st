@@ -1,9 +1,6 @@
 Class {
 	#name : #DS2DPoint,
-	#superclass : #Object,
-	#instVars : [
-		'data'
-	],
+	#superclass : #DSDimension,
 	#category : #Dashboard
 }
 
@@ -11,16 +8,6 @@ Class {
 DS2DPoint class >> consumeFrom: aCollection [ 
 	
 	^ self new data: (Point new setX: aCollection first setY: aCollection second); yourself
-]
-
-{ #category : #accessing }
-DS2DPoint >> data: aPoint [ 
-	data := aPoint
-]
-
-{ #category : #accessing }
-DS2DPoint >> type [
-	^ self class
 ]
 
 { #category : #accessing }
