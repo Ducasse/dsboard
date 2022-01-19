@@ -1,6 +1,6 @@
 Class {
 	#name : #DS2DPoint,
-	#superclass : #DSDimension,
+	#superclass : #DSDomain,
 	#category : #Dashboard
 }
 

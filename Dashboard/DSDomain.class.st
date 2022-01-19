@@ -1,5 +1,5 @@
 Class {
-	#name : #DSDimension,
+	#name : #DSDomain,
 	#superclass : #Object,
 	#instVars : [
 		'data'
@@ -8,11 +8,11 @@ Class {
 }
 
 { #category : #accessing }
-DSDimension >> data: aPoint [ 
+DSDomain >> data: aPoint [ 
 	data := aPoint
 ]
 
 { #category : #accessing }
-DSDimension >> type [
+DSDomain >> type [
 	^ self class
 ]
