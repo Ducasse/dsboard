@@ -1,9 +1,6 @@
 Class {
 	#name : #DSCompositeDomain,
-	#superclass : #Object,
-	#instVars : [
-		'data'
-	],
+	#superclass : #DSDomain,
 	#category : #Dashboard
 }
 
@@ -14,6 +11,21 @@ DSCompositeDomain class >> data: aCollection for: aCollection2 [
 	^ self new
 			data: (DSBuilder consume: aCollection asDimensions: aCollection2 );
 			yourself 		
+]
+
+{ #category : #'instance creation' }
+DSCompositeDomain class >> example [ 
+	<sampleInstance>
+	
+	^ (DSBuilder 
+		consumeCollection: 
+			#(
+			(2.4 true 'rain')
+			(0.5 true 'rain')
+			(-1.2 true 'snow')
+			(-2.3 false '-')
+			(3.2 true 'rain')	) 
+		asElementOf: { DSTemperature . DSBoolean . DSEnumerated }) first
 ]
 
 { #category : #accessing }
