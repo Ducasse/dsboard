@@ -1,6 +1,6 @@
 Class {
 	#name : #DSHeight,
-	#superclass : #DSSingleData,
+	#superclass : #DSNumerical,
 	#category : #'Dashboard-Data-Domain'
 }
 

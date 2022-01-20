@@ -54,16 +54,6 @@ DSScatterPlotWithError >> draw [
 	^ c canvas
 ]
 
-{ #category : #examples }
-DSScatterPlotWithError >> example [
-	<script>
-	
-	| ch |
-	ch := self new. 
-	ch draw open 
-	
-]
-
 { #category : #drawing }
 DSScatterPlotWithError >> fill [ 
 

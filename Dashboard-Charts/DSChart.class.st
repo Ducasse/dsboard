@@ -7,6 +7,12 @@ Class {
 	#category : #'Dashboard-Charts-Domain'
 }
 
+{ #category : #description }
+DSChart class >> dashboardDescription [ 
+
+	^ self subclassResponsibility 
+]
+
 { #category : #examples }
 DSChart class >> example [
 	<script>

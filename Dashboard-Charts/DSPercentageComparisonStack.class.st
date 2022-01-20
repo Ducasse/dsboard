@@ -13,7 +13,7 @@ DSPercentageComparisonStack class >> dashboardDescription [
 
 	^ DSChartDescription new
 			kind: (DSCompositeDomain domains: {DSNumber . DSNumber}) ;
-			populationSize: (DSRange between: 10 and: 10000);
+			populationSize: (DSRange between: 3 and: 15);
 			yourself
 	
 ]

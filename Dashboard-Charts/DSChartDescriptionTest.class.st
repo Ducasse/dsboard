@@ -24,7 +24,7 @@ DSChartDescriptionTest >> testIsBuilderSelectingHistogram [
  
 	| b collections|
 	b := DSBuilder new.
-	collections := DSBuilder 
+	collections := b 
 		consume: #( 33 44 55 66 98 77 88 898 45 3 2 3 4 2222 4442 1 2 34 4 44 ) 
 		asAllOf: DSNumber.
 	self assert: (b chartClassesFor: collections) first equals: DSHistogram 
@@ -35,7 +35,7 @@ DSChartDescriptionTest >> testIsBuilderSelectingScatterPlot [
  
 	| b collections|
 	b := DSBuilder new.
-	collections := DSBuilder 
+	collections := b 
 		consume: #( 
 					(33 44 5) 
 					(55 66 2) 

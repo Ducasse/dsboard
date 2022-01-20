@@ -8,7 +8,7 @@ Class {
 	#category : #'Dashboard-Charts-Domain'
 }
 
-{ #category : #'as yet unclassified' }
+{ #category : #description }
 DSHistogram class >> dashboardDescription [
 
 	^ DSChartDescription new

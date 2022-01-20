@@ -1,6 +1,6 @@
 Class {
 	#name : #DSWeight,
-	#superclass : #DSSingleData,
+	#superclass : #DSNumerical,
 	#category : #'Dashboard-Data-Domain'
 }
 
