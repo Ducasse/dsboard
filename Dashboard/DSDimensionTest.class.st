@@ -16,7 +16,7 @@ DSDimensionTest >> testCompositeDimension [
 			(-1.2 true 'snow')
 			(-2.3 false '-')
 			(3.2 true 'rain')	) 
-		asElementOf: { DSTemperature . DSBoolean . DSEnumerated }.
+		asCompositeElementsOf: { DSTemperature . DSBoolean . DSEnumerated }.
 	self assert: res size equals: 5.
 	self assert: res first first type equals: DSTemperature.
 	self assert: res first second type equals: DSBoolean.

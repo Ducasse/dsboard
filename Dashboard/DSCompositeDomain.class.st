@@ -33,7 +33,7 @@ DSCompositeDomain class >> example [
 			(-1.2 true 'snow')
 			(-2.3 false '-')
 			(3.2 true 'rain')	) 
-		asElementOf: { DSTemperature . DSBoolean . DSEnumerated }) first
+		asCompositeElementsOf: { DSTemperature . DSBoolean . DSEnumerated }) first
 ]
 
 { #category : #accessing }
