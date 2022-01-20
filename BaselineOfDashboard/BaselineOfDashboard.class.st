@@ -10,5 +10,7 @@ BaselineOfDashboard >> baseline: spec [
 
 	spec for: #'common' do: [
 		spec 
-			package: #'Dashboard']
+			package: #'Dashboard'.
+		spec 
+			package: #'Dashboard-Charts' with: [ spec requires: 'Dashboard' ]]
 ]
