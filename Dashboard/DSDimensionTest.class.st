@@ -47,3 +47,15 @@ DSDimensionTest >> testSimpleDimension2 [
 	self assert: res second type equals: DSWeight
 	 
 ]
+
+{ #category : #tests }
+DSDimensionTest >> testSimpleDimension2d5 [
+
+	| res |
+	res := (DSBuilder consume: #(100 200 5) as: DS2D5Point).
+	self assert: res x equals: 100.
+	self assert: res y equals: 200.
+	self assert: res marginError equals: 5.
+	self assert: res type equals: DS2D5Point
+	 
+]
