@@ -1,7 +1,7 @@
 Class {
 	#name : #DSDataSetDescriptionTest,
 	#superclass : #TestCase,
-	#category : #Dashboard
+	#category : #'Dashboard-Tests'
 }
 
 { #category : #tests }

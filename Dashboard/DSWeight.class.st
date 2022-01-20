@@ -1,7 +1,7 @@
 Class {
 	#name : #DSWeight,
 	#superclass : #DSSingleData,
-	#category : #Dashboard
+	#category : #'Dashboard-Data-Domain'
 }
 
 { #category : #accessing }

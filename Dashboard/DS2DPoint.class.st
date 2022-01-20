@@ -1,7 +1,7 @@
 Class {
 	#name : #DS2DPoint,
 	#superclass : #DSDomain,
-	#category : #Dashboard
+	#category : #'Dashboard-Data-Domain'
 }
 
 { #category : #'instance creation' }

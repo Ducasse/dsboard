@@ -1,5 +1,5 @@
 Class {
 	#name : #DSBoolean,
 	#superclass : #DSSingleData,
-	#category : #Dashboard
+	#category : #'Dashboard-Data-Domain'
 }

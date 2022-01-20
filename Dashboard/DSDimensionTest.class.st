@@ -1,7 +1,7 @@
 Class {
 	#name : #DSDimensionTest,
 	#superclass : #TestCase,
-	#category : #Dashboard
+	#category : #'Dashboard-Tests'
 }
 
 { #category : #tests }
@@ -58,4 +58,16 @@ DSDimensionTest >> testSimpleDimension2d5 [
 	self assert: res marginError equals: 5.
 	self assert: res type equals: DS2D5Point
 	 
+]
+
+{ #category : #tests }
+DSDimensionTest >> testSimpleListOfNumber [
+
+	| res |
+	res := DSBuilder 
+				consume: #( 33 44 55 66 98 77 88 898 45 3 2 3 4 2222 4442 1 2 34 4 44 ) 
+				asAllOf: DSNumber.
+	self assert: res first data equals: 33.
+	self assert: res last data equals: 44.
+	
 ]

@@ -1,7 +1,7 @@
 Class {
 	#name : #DSSingleData,
 	#superclass : #DSDomain,
-	#category : #Dashboard
+	#category : #'Dashboard-Data-Domain'
 }
 
 { #category : #'instance creation' }
@@ -13,4 +13,9 @@ DSSingleData class >> consumeCollection: aCollection as: aClass [
 { #category : #'instance creation' }
 DSSingleData class >> consumeFrom: anInteger [ 
 	^ self new data: anInteger ; yourself
+]
+
+{ #category : #accessing }
+DSSingleData >> kind [
+	^ self class
 ]

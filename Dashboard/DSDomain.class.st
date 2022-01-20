@@ -4,7 +4,7 @@ Class {
 	#instVars : [
 		'data'
 	],
-	#category : #Dashboard
+	#category : #'Dashboard-Data-Domain'
 }
 
 { #category : #accessing }

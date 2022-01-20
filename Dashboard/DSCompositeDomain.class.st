@@ -1,7 +1,10 @@
 Class {
 	#name : #DSCompositeDomain,
 	#superclass : #DSDomain,
-	#category : #Dashboard
+	#instVars : [
+		'domains'
+	],
+	#category : #'Dashboard-Data-Domain'
 }
 
 { #category : #'instance creation' }
@@ -11,6 +14,11 @@ DSCompositeDomain class >> data: aCollection for: aCollection2 [
 	^ self new
 			data: (DSBuilder consume: aCollection asDimensions: aCollection2 );
 			yourself 		
+]
+
+{ #category : #'instance creation' }
+DSCompositeDomain class >> domains: aCollection [ 
+	^ self new domains: aCollection ; yourself
 ]
 
 { #category : #'instance creation' }
@@ -31,6 +39,12 @@ DSCompositeDomain class >> example [
 { #category : #accessing }
 DSCompositeDomain >> data: aCollection [ 
 	data := aCollection
+]
+
+{ #category : #accessing }
+DSCompositeDomain >> domains: aCollection [ 
+	
+	domains := aCollection
 ]
 
 { #category : #accessing }

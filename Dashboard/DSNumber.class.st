@@ -1,5 +1,10 @@
 Class {
 	#name : #DSNumber,
 	#superclass : #DSSingleData,
-	#category : #Dashboard
+	#category : #'Dashboard-Data-Domain'
 }
+
+{ #category : #accessing }
+DSNumber >> data [
+	^ data 
+]
